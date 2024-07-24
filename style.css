@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+    overflow-x: hidden;
+}
+header {
+    background-color:rgb(29, 26, 26);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    top:0;
+}
+h1{
+    text-align: left;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+    text-align:right;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+.slider{
+    position:relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: margin-left 0.5s ease-in-out;;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background 0.1s;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+.hero-section {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(180, 191, 193);
+    
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+h2{
+    color:rgb(34, 75, 67);
+}
+
+.about-section {
+    padding: 60px 20px;
+    background-color:white;
+    text-align: center;
+    
+}
+
+.about-section .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+p{
+    font-size:x-large;
+}
+.banner {
+    background-image: url('banner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Adjust the padding as needed */
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    font-weight: bold;
+}
+.zigzag {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.zigzag.reverse {
+    flex-direction: row-reverse;
+}
+
+.image {
+    max-width: 100px; /* Adjust size as needed */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.zigzag.reverse .image {
+    margin-left: 20px; /* Space for reversed layout */
+    margin-right: 0; /* Remove right margin */
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product {
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    height: 300px;
+    width: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.map-container {
+    margin: 100px;  /* Adds space outside the map container */
+    padding: 20px; /* Adds space inside the map container */
+    border: 1px solid #ccc; /* Optional: adds a border to the container */
+    display: flex;
+    justify-content: left; /* Centers the map horizontally */
+    align-items: center; /* Centers the map vertically */
+}
+
+
+.map, .form {
+    flex: 1;
+    margin: 0 1em;
+}
+
+form {
+    max-width: 500px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    border: 1px solid #050000;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.75em;
+    background-color:rgb(34, 75, 67);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: blue;
+}
+
+
+.footer {
+    background: url('footer.jpg') no-repeat center center;
+    background-size:cover;
+    height: fit-content;
+    opacity: 0.9;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration:double;
+}
+footer .social-media {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+.footer-section p {
+    margin: 5px 0;
+}
+.footer-bottom {
+    background-color:brown; /* Different background for copyright section */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+
+
+
