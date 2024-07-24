@@ -1,1 +1,230 @@
-# luxury-jewel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewelry Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="color: white;">
+            <img src="logo.png" alt="Jewelry Shop Logo">
+            Luxury Jewels
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+            <div class="slide first">
+                <img src="jewel.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="slide1.jpg" alt="Image 2">
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="prev" onclick="prevSlide()">&#10094;</div>
+            <div class="next" onclick="nextSlide()">&#10095;</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </section>
+    <br>
+    <br>
+    <br>
+         <section id="about" class="about-section">
+        <div class="content">
+            <h2 style="color:rgb(34, 75, 67);">About Us</h2>
+            <p>For over 50 years, our family-owned jewelry shop has been dedicated to creating exquisite pieces that bring joy and elegance to every occasion. Our skilled artisans take pride in their craftsmanship, ensuring that every item is a true work of art.</p>
+        </div>
+    </section>
+    <section id="products" class="products-section">
+        <h2 style="color:rgb(34, 75, 67);">Our Collections</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="ring.jpg" alt="Ring" width="500">
+                <p>Exquisite Diamond Ring</p>
+            </div>
+            <div class="product">
+                <img src="necklace.jpg" alt="Necklace">
+                <p>Elegant Pearl Necklace</p>
+            </div>
+            <div class="product">
+                <img src="bracelet.jpg" alt="Bracelet">
+                <p>Stylish Gold Bracelet</p>
+            </div>
+            <div class="product">
+                <img src="earrings.jpg" alt="Earrings">
+                <p>Chic Silver Earrings</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <style>
+        .testimonial-slider {
+            background: linear-gradient(135deg,rgba(0, 0, 0, 0.358));
+            padding: 50px 0;
+            color:black;
+        }
+        .testimonial-slider .carousel-item {
+            text-align: center;
+        }
+        .testimonial-slider .carousel-indicators {
+            bottom: -30px;
+        }
+        .testimonial-slider .carousel-indicators li {
+            background-color: white;
+        }
+        .testimonial-slider .carousel-control-prev,
+        .testimonial-slider .carousel-control-next {
+            color: white;
+        }
+        .testimonial-slider .carousel-control-prev-icon,
+        .testimonial-slider .carousel-control-next-icon {
+            background-color: black;
+        }
+        .testimonial-slider .testimonial {
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .testimonial-slider .testimonial p {
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        .testimonial-slider .testimonial h5 {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+     <h2 style="text-align: center; color:black;">Testimonial</h2>
+     <br>
+     <br>
+<div id="testimonialCarousel" class="carousel slide testimonial-slider" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="testimonial">
+                <p>"This is a fantastic product! Highly recommend to everyone."</p>
+                <h5>- John Doe</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>"Excellent service and support. Will buy again!"</p>
+                <h5>- Jane Smith</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>"Top quality and great value for money. Five stars!"</p>
+                <h5>- Mike Johnson</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>"The Jewels are designed according to Customer Wish"</p>
+                <h5>- Nathu</h5>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<br>
+<br>
+<br>
+<h1 style="text-align: center">Contact Us</h1>
+<section id="contact" class="section contact">
+        <div class="contact-container">
+         <div class="map-container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.430248728041!2d80.2015070750749!3d12.880032687426933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525be956639f23%3A0xcacac59926a848b1!2sLUXURY%20COVERING%20JEWELLERY!5e0!3m2!1sen!2sin!4v1721296977988!5m2!1sen!2sin" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+         <div class="form">
+             <form action="300" method="post">
+                 <label for="name">Name:</label>
+                 <input type="text" id="name" name="name" required>
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" required>
+                 <label for="mobile no">Mobile no:</label>
+                 <input type="text" id="mobile no" mobile no="mobile no" required>
+                 <label for="address">Address:</label>
+                 <input type="text" id="Address" address="address" required>
+                 <label for="message">Feedback:</label>
+                 <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                 <button type="submit">Submit</button>
+             </form>
+         </div>
+     </div>
+ </section>
+<br>
+<br>
+    </section>
+    <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section useful-links">
+                    <h2 style="color:wheat">Useful Links</h2>
+                    <ul>
+                        <li style="font-size: x-large;"><a href="home.html">Home</a></li>
+                        <li style="font-size: x-large;"><a href="about.html">About</a></li>
+                        <li style="font-size: x-large;"><a href="product.html">Product</a></li>
+                        <li style="font-size: x-large;"><a href="testimonial.html">Testimonial</a></li>
+                        <li style="font-size: x-large;"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section address">
+                    <h2 style="color:wheat;">Contact Details</h2>
+                    <p>Semmancheri,</p>
+                    <p>Chennai</p>
+                    <p>Tamil Nadu - 600119</p>
+                    <p>luxury@jewellery.com</p>
+                    <p>+91 9025173794</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href=https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        </footer>
+        <footer>
+            <div class="footer-bottom">
+                <p style="text-align: center;">&copy; 2024 Luxury Jewels. All Rights Reserved.</p>
+            </div>
+    </footer>
+</body>
+</html>
