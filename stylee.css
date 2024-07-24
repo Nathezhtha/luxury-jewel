@@ -1,0 +1,100 @@
+
+.main-container {
+    width: 90%; /* Adjust as needed to control the main container width */
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.image-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow effect */
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .text-overlay {
+    opacity: 1;
+}
+
+.text-overlay h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.text-overlay p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons button {
+    background-color: #e0a800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #d18e00;
+}
+
+
